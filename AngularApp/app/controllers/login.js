@@ -15,10 +15,9 @@
 	function login($scope, $http, $state, loginService) {
 
 		// PUBLIC FUNCTIONS
-		$scope.login = function () {
-			console.log('I have called the login function', $scope.user);
+		$scope.submit = function () {
 			loginService.assignCurrentUser($scope.user);
-			$state.go("state1");
+			$state.go("Welcome");
 		}
 
 

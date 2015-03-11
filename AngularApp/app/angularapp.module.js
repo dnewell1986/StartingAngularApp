@@ -26,7 +26,7 @@
 			if (requireLogin && typeof $rootScope.currentUser === 'undefined') {
 				event.preventDefault();
 				//route to login page.
-				$state.go("state2");
+				$state.go("Login");
 				
 			}
 		});

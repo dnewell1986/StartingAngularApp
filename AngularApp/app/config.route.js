@@ -11,7 +11,7 @@
     	$urlRouterProvider.otherwise("/state1");
 
 	    $stateProvider
-		    .state('state1', {
+		    .state('Welcome', {
 			    url: '/state1',
 			    templateUrl: "app/views/index.html",
 			    controller: 'Index',
@@ -19,7 +19,7 @@
 					requireLogin: true
 				}
 		    })
-			.state('state2', {
+			.state('Login', {
 				url: '/state2',
 				templateUrl: "app/views/login.html",
 				controller: 'Login',
